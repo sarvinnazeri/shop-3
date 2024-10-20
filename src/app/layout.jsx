@@ -11,7 +11,7 @@ import { useEffect } from 'react';
 function Layout({ children }) {
     return (
         <html>
-            <body className='font-helvetica'>
+            <body className=''>
                 <Header />
                 {children}
                 <Footer />
@@ -52,7 +52,7 @@ function Header() {
     };
 
     return (
-        <header className='w-full bg-white h-[70px] border flex text-black capitalize'>
+        <header className='w-full bg-white h-[70px] border flex uppercase text-black text-[13px]'>
             <nav className='w-full flex justify-between items-center px-11'>
                 <a href="/" className='text-lg font-bold'>LONDØNWORKS</a>
                 <ul className='hidden space-x-4 justify-center items-center lg:flex cursor-pointer'>
@@ -120,32 +120,32 @@ function Header() {
 function Footer() {
     return (
         <footer className='border flex w-full'>
-            <section className='flex p-10 justify-center items-start bg-[rgb(245,245,245)] w-full text-[rgb(64,69,73)] flex-wrap'>
-                <ul className='*:my-5 w-full md:w-[50%] lg:w-[22%]'>
-                    <li className='text-[25px]'>INFO</li>
-                    <li>terms and conditions</li>
-                    <li>Deliveries & Returns</li>
-                    <li>Privacy Policy</li>
-                    <li>Photostudio</li>
-                    <li>Agency/Showroom</li>
+            <section className='flex p-10 px-5  justify-center items-start bg-[rgb(245,245,245)] w-full text-[rgb(64,69,73)] flex-wrap'>
+                <ul className='*:my-5 w-full md:w-[50%] lg:w-[22%] lg:mt-0 mt-5'>
+                    <li className='text-[14px]'>INFO</li>
+                    <li className='text-[13px]'>terms and conditions</li>
+                    <li className='text-[13px]'>Deliveries & Returns</li>
+                    <li className='text-[13px]'>Privacy Policy</li>
+                    <li className='text-[13px]'>Photostudio</li>
+                    <li className='text-[13px]'>Agency/Showroom</li>
                 </ul>
-                <ul className='*:my-5 w-full md:w-[50%] lg:w-[22%]'>
-                    <li className='text-[25px]'>CONTACT US</li>
-                    <li>LONDONWORKS</li>
-                    <li>ABD Social LTD</li>
-                    <li>72 Fortis Green Road, N10 3HN, LONDON</li>
-                    <li>Email: info@londonworks.com</li>
+                <ul className='*:my-5 w-full md:w-[50%] lg:w-[22%] lg:mt-0 mt-5'>
+                    <li className='text-[14px]'>CONTACT US</li>
+                    <li className='text-[13px]' >LONDONWORKS</li>
+                    <li className='text-[13px]' >ABD Social LTD</li>
+                    <li className='text-[13px]' >72 Fortis Green Road, N10 3HN, LONDON</li>
+                    <li className='text-[13px]'>Email: info@londonworks.com</li>
                 </ul>
-                <ul className='*:my-5 w-full md:w-[50%] lg:w-[22%]'>
-                    <li className='text-[25px]'>CAREERS</li>
-                    <li>Click here to find out about our latest roles available.</li>
+                <ul className='*:my-5 w-full md:w-[50%] lg:w-[22%] lg:mt-0 mt-5'>
+                    <li className='text-[14px]'>CAREERS</li>
+                    <li className='text-[13px]'>Click here to find out about our latest roles available.</li>
                 </ul>
-                <ul className='*:my-5 w-full md:w-[50%] lg:w-[22%]'>
-                    <li className='text-[25px]'>NEWSLETTER</li>
+                <ul className='*:my-5 w-full md:w-[50%] lg:w-[22%] lg:mt-0 mt-5'>
+                    <li className='text-[14px]'>NEWSLETTER</li>
                     <li>
                         <form action="" className='*:w-full'>
-                            <input type="text" className='h-[40px] border my-2' />
-                            <input type="submit" value='subscribe' className='border bg-[rgb(67,96,118)] text-[white] h-[40px] cursor-pointer' />
+                            <input type="text" className='h-[40px] border my-2 text-sm px-2' placeholder='Email address' />
+                            <input type="submit"  value='subscribe' className='border bg-[rgb(67,96,118)] text-[white] h-[40px] cursor-pointer' />
                         </form>
                     </li>
                 </ul>

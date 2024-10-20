@@ -3,10 +3,14 @@
 @tailwind utilities;
 
 
+
 @font-face {
-    font-family: 'helvetica';
-    src: url('/fonts/Helvetica.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
+  font-family: 'YourFontName';
+  src: url('/fonts/Helvetica.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'YourFontName', sans-serif;
+}
